@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Factorial
+{
+	public static void main(String args[])
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter number");
+		int n=sc.nextInt();
+		int fact=1;
+		int i=1;
+		if(n<0)
+		{
+			System.out.println(" not factorial number");
+		}
+		else
+		{
+			while(i<=n)
+			{
+				fact=fact*i;
+				i++;
+			}
+			System.out.println("factorial="+fact);
+		}
+	}
+}
